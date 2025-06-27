@@ -1,4 +1,5 @@
-'''This script takes two or more playlists from a Plex server and combines them into a new playlist. Tracks can be sorted in different ways.
+'''This script takes two or more playlists from a Plex server and combines them into a new playlist. That way, a 'master' playlist can be built. 
+Tracks can be sorted in different ways.
 New: The total number of tracks can be limited.'''
 
 from plexapi.server import PlexServer
@@ -8,10 +9,6 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 import FreeSimpleGUI as sg
-
-
-
-
 
 # 1. Identify current folder as working folder.
 current_directory = os.path.dirname(os.path.abspath(__file__))
